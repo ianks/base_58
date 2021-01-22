@@ -7,8 +7,8 @@ require "rake/extensiontask"
 
 task :build => :compile
 
-Rake::ExtensionTask.new("base_58") do |ext|
-  ext.lib_dir = "lib/base_58"
+Rake::ExtensionTask.new("b58") do |ext|
+  ext.lib_dir = "lib/b58"
 end
 
 task :default => [:clobber, :compile, :spec]

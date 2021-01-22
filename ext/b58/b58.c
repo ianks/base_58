@@ -1,4 +1,4 @@
-#include "base_58.h"
+#include "b58.h"
 #include "./../libbase58/base58.c"
 
 #include <openssl/sha.h>
@@ -109,7 +109,7 @@ VALUE rb_mBase58_check_58(VALUE self, VALUE str) {
   }
 }
 
-void Init_base_58(void) {
+void Init_b58(void) {
   b58_sha256_impl = my_sha256;
 
   rb_mBase58 = rb_define_module("Base58");

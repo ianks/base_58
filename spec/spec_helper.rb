@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "base_58"
+require "b58"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

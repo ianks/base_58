@@ -1,14 +1,14 @@
-require_relative 'lib/base_58/version'
+require_relative 'lib/b58/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "base_58"
+  spec.name          = "b58"
   spec.version       = Base58::VERSION
   spec.authors       = ["Ian Ker-Seymer"]
   spec.email         = ["i.kerseymer@gmail.com"]
 
   spec.summary       = %q{A base58 encoder for Ruby}
   spec.description   = %q{Uses libbase58 to encode Ruby strings to base58}
-  spec.homepage      = "https://github.com/ianks/base_58"
+  spec.homepage      = "https://github.com/ianks/b58"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
@@ -24,5 +24,5 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-  spec.extensions    = ["ext/base_58/extconf.rb"]
+  spec.extensions    = ["ext/b58/extconf.rb"]
 end

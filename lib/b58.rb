@@ -1,5 +1,5 @@
-require "base_58/version"
-require "base_58/base_58"
+require "b58/version"
+require "b58/b58"
 
 module Base58
   class Error < StandardError; end
